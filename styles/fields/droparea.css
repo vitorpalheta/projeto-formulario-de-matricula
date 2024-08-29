@@ -1,6 +1,7 @@
 /* Area de arquivo personalizada */
 .dropzone{
-  border: 1px dashed var(--stroke-defaut);
+  border: 2px dashed transparent;
+  outline: 1px dashed var(--stroke-defaut);
   border-radius: .25rem;
 
   display: grid;
@@ -26,7 +27,7 @@
 
   /* Se o input estiver em focus, aplica a estilização */
   &:hover, &:has(input:focus){
-    border-width: 2px;
+    outline-width: 0;
     border-color: var(--stroke-highlight);
     background-color: var(--surface-secondary);
 
